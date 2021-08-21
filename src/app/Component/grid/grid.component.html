@@ -1,0 +1,48 @@
+<div style="margin-top: 10px;
+z-index: 50;
+position: absolute;
+right: 71px;">
+  <span class="button-group">
+    <i class="pi pi-chevron-left" (click)="prev()" *ngIf="isFilter && searchItem.length>0" style="font-size: 15px"></i>
+    <input type="text" style="outline:0px;" [ngModel]="mymodel" (ngModelChange)="valuechange($event)">
+    <i class="pi pi-chevron-right" (click)="next()" *ngIf="isFilter && searchItem.length>0" style="font-size: 15px"></i>
+    <p-checkbox [(ngModel)]="isFilter" [binary]="true" (onChange)="isFilterChange($event)"></p-checkbox>
+
+
+
+    <!-- <button (click)="next()">next</button>
+      <button (click)="prev()">prev</button> -->
+      <button (click)="autoSize()">AutoSize</button> 
+    <button (click)="excel()">excel</button> 
+    <button (click)="toolPanel()">Tool</button> 
+    <button (click)="expand()">Expand</button> 
+    <button (click)="collapse()">Collapse</button> 
+    <button (click)="sAll()">Select All</button> 
+    <button (click)="dAll()">Deselect All</button> 
+    <button (click)="inverseAll()">Inverse All</button> 
+
+    
+  </span>
+</div>
+<ag-grid-angular #agGrid style="width: 100%; height: 100%;" id="myGrid" class="ag-theme-alpine" [rowHeight]='25'
+  [defaultColDef]="defaultColDef" [autoGroupColumnDef]="autoGroupColumnDef" [enableRangeSelection]="true"
+  [rowGroupPanelShow]="rowGroupPanelShow" [animateRows]="true" (filterChanged)="onFilterChanged($event)"
+  (cellValueChanged)="onCellValueChanged($event)"
+  (cellEditingStarted)="oncellEditingStarted()"
+  (cellKeyPress)="onCellKeyPress($event)"
+  (cellEditingStopped)="oncellEditingStopped()" 
+  (rowDataChanged)='onRowDataChanged()'
+  (rowDataUpdated)='onRowDataUpdated()' 
+  (modelUpdated)='onModelUpdated($event)'
+  [getRowClass]="getRowClass"
+  (rowDoubleClicked)='onRowDoubleClicked($event)' 
+  [sideBar]= "sideBar"
+  [statusBar]="statusBar"
+  [enableRangeSelection]="true"
+  (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+
+
+<!-- <ag-grid-angular [gridOptions]={gridOptions} >  </ag-grid-angular> -->
+
+<!-- [rowData]="rowData" -->

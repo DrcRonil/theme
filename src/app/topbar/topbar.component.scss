@@ -1,0 +1,59 @@
+
+.layout-top-bar{
+ width: 100%;
+ height: 60px;
+ background-color:   #FFFFFF;
+ position: fixed;
+ top: 0px;
+ z-index: 1;
+ cursor: pointer;
+}
+
+
+.MenuhideBtn
+{
+     display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .MenuhideBtn
+    {
+         display: block;
+    }
+  }
+
+  .header {
+      display: inline-block;
+      width: 250px; 
+
+      p {
+          font-size: 30px;
+          font-weight: bold;
+          text-align: center;
+          margin-top: 10px;
+          margin-bottom: 0px;
+      }
+}
+
+
+.btnMenu{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #e8eaf6;
+    color: #3949ab;
+    border-radius: 8px;
+
+
+    &:hover{
+     color: #e8eaf6;
+     background: #3949ab;
+    }
+
+    i{
+     margin-top: 10px; 
+     margin-left: 10px;
+    }
+
+    
+}

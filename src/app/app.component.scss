@@ -1,0 +1,27 @@
+.layout-content {
+    margin-left: 250px;
+    transition:all 0.5s ease;
+    background: #e8eaf6;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius : 15px;
+    height:  100%;
+    .MainForm {
+        border-radius : 12px;
+        background: white;
+        padding: 35px;
+        height:  100%;
+    }
+}
+
+.layout-content-active {
+    margin-left: 0px !important;
+}
+
+
+@media screen and (max-width: 960px){
+    .layout-content {
+        margin-left: 0;
+     
+    }
+}

@@ -1,0 +1,164 @@
+<div class="card">
+    <h5>Vertical</h5>
+    <div class="p-fluid">
+        <div class="p-field">
+            <label for="firstname1">Firstname</label>
+            <input id="firstname1" type="text" pInputText> 
+        </div>
+        <div class="p-field">
+            <label for="lastname1">Lastname</label>
+            <input id="lastname1" type="text" pInputText> 
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Vertical and Grid</h5>
+    <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-12 p-sm-6 p-md-3">
+            <label for="firstname2">Firstname</label>
+            <input id="firstname2" type="text" pInputText> 
+        </div>
+        <div class="p-field p-col-12 p-sm-6 p-md-3">
+            <label for="lastname2">Lastname</label>
+            <input id="lastname2" type="text" pInputText> 
+        </div>
+     
+    </div>
+</div>
+
+<div class="card">
+    <h5>Horizontal and Fixed Width</h5>
+    <div class="p-field p-grid">
+        <label for="firstname3" class="p-col-fixed" style="width:100px">Firstname</label>
+        <div class="p-col">
+            <input id="firstname3" type="text" pInputText> 
+        </div>
+    </div>
+    <div class="p-field p-grid">
+        <label for="lastname3" class="p-col-fixed" style="width:100px">Lastname</label>
+        <div class="p-col">
+            <input id="lastname3" type="text" pInputText> 
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Horizontal and Fluid</h5>
+    <div class="p-fluid">
+        <div class="p-field p-grid">
+            <label for="firstname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Firstname</label>
+            <div class="p-col-12 p-md-10">
+                <input id="firstname4" type="text" pInputText> 
+            </div>
+        </div>
+        <div class="p-field p-grid">
+            <label for="lastname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Lastname</label>
+            <div class="p-col-12 p-md-10">
+                <input id="lastname4" type="text" pInputText> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Inline</h5>
+    <div class="p-formgroup-inline">
+        <div class="p-field">
+            <label for="firstname5" class="p-sr-only">Firstname</label>
+            <input id="firstname5" type="text" pInputText placeholder="Firstname"> 
+        </div>
+        <div class="p-field">
+            <label for="lastname5" class="p-sr-only">Lastname</label>
+            <input id="lastname5" type="text" pInputText placeholder="Lastname"> 
+        </div>
+        <button pButton pRipple type="button" label="Submit"></button>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Vertical Checkbox</h5>
+    <div class="p-field-checkbox">
+        <p-checkbox name="city1" value="Chicago" [(ngModel)]="cities1" inputId="city1"></p-checkbox>
+        <label for="city1">Chicago</label>
+    </div>
+    <div class="p-field-checkbox">
+        <p-checkbox name="city2" value="Los Angeles" [(ngModel)]="cities1" inputId="city2"></p-checkbox>
+        <label for="city2">Los Angeles</label>
+    </div>
+
+    <h5>Horizontal Checkbox</h5>
+    <div class="p-formgroup-inline">
+        <div class="p-field-checkbox">
+            <p-checkbox name="city3" value="Chicago" [(ngModel)]="cities2" inputId="city3"></p-checkbox>
+            <label for="city3">Chicago</label>
+        </div>
+        <div class="p-field-checkbox">
+            <p-checkbox name="city4" value="Los Angeles" [(ngModel)]="cities2" inputId="city4"></p-checkbox>
+            <label for="city4">Los Angeles</label>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Vertical RadioButton</h5>
+    <div class="p-field-radiobutton">
+        <p-radioButton name="city5" value="Chicago" [(ngModel)]="city1" inputId="city5"></p-radioButton>
+        <label for="city5">Chicago</label>
+    </div>
+    <div class="p-field-radiobutton">
+        <p-radioButton name="city6" value="Los Angeles" [(ngModel)]="city1" inputId="city6"></p-radioButton>
+        <label for="city6">Los Angeles</label>
+    </div>
+
+    <h5>Horizontal RadioButton</h5>
+    <div class="p-formgroup-inline">
+        <div class="p-field-checkbox">
+        <p-radioButton name="city7" value="Chicago" [(ngModel)]="city2" inputId="city7"></p-radioButton>
+        <label for="city7">Chicago</label>
+        </div>
+        <div class="p-field-checkbox">
+            <p-radioButton name="city8" value="Los Angeles" [(ngModel)]="city2" inputId="city8"></p-radioButton>
+            <label for="city8">Los Angeles</label>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Help Text</h5>
+    <div class="p-field p-fluid">
+        <label for="username">Username</label>
+        <input id="username" type="username" pInputText aria-describedby="username-help"> 
+        <small id="username-help">Enter your username to reset your password.</small>
+    </div>
+</div>
+
+<div class="card">
+    <h5>Advanced</h5>
+    <div class="p-fluid p-formgrid p-grid">
+        <div class="p-field p-col-12 p-md-6">
+            <label for="firstname6">Firstname</label>
+            <input id="firstname6" type="text" pInputText> 
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="lastname6">Lastname</label>
+            <input id="lastname6" type="text" pInputText> 
+        </div>
+        <div class="p-field p-col-12">
+            <label for="address">Address</label>
+            <textarea id="address" type="text" rows="4" pInputTextarea></textarea>
+        </div>
+        <div class="p-field p-col-12 p-md-6">
+            <label for="city">City</label>
+            <input id="city" type="text" pInputText> 
+        </div>
+        <div class="p-field p-col-12 p-md-3">
+            <label for="state">State</label>
+            <p-dropdown inputId="state" [options]="states" [(ngModel)]="selectedState" placeholder="Select" optionLabel="name"></p-dropdown>
+        </div>
+        <div class="p-field p-col-12 p-md-3">
+            <label for="zip">Zip</label>
+            <input id="zip" type="text" pInputText> 
+        </div>
+    </div>
+</div>

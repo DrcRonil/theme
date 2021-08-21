@@ -1,0 +1,26 @@
+<!-- <div style="width: 100%; height: 100%;">
+  <app-grid></app-grid>
+</div> -->
+
+<div style="height: 100%;">
+
+  <div style="width: 100%; height: 100%;">
+    <button (click)=grid1()> grid 1</button>  &nbsp; &nbsp; 
+    <!-- <button (click)=grid2()> grid 2</button> -->
+     &nbsp; &nbsp; 
+    <input type='text' [(ngModel)]="Barcode"  (keydown.enter)="selectWithBarcode($event)"/>
+    <div style="height: calc(100% - 21px); width: 100%;">
+      <app-grid 
+      (_gridApi)='setGrid($event)'
+      (filterchange)='setfilterchange($event)'
+      (rowDoubleClicked)='setRowDoubleClicked($event)'
+      (CellValueChange)='GetCellValueChange($event)'></app-grid>
+    </div>
+  </div>
+  <!-- <div style="background-color:azure;width: 100%; height: 50%;">
+   
+    <a  onmouseover="Tip('Some text')" onmouseout="UnTip()">Homepage </a>
+ 
+  </div> -->
+
+</div>
